@@ -1,3 +1,11 @@
+body {
+    background-image: url('../image/bgr.jpg');
+    background-size: cover; /* Đảm bảo hình nền sẽ đủ lớn để phủ toàn bộ trang */
+    /* background-position: center; Căn hình nền vào giữa trang */
+    background-repeat: no-repeat; /* Không lặp lại hình nền */
+}
+
+
 #album {
     width: 100%;
     height: 100%;
@@ -14,8 +22,9 @@
     height: 95%;
     position: absolute;
     transition: opacity 1s ease-in-out;
-    border-radius: 5px;
+    border-radius: 8px;
     align-items: center;
+    object-fit: cover; /* để ảnh không bị méo khi thay đổi kích thước */
 }
 
 #album img.active {
@@ -25,4 +34,26 @@
 #album img:not(.active) {
     opacity: 0;
 }
+
+#chu {
+    font-family: 'Dancing Script', cursive;
+    background-color: aliceblue;
+    padding: 20px 10px;
+    width: 500px;
+    display: none; /* Ẩn ban đầu */
+    transition: opacity 1s ease-in-out; /* Hiệu ứng khi hiện ra */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#chu.active {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    opacity: 1; /* Hiện khi có class active */
+}
+
+
  

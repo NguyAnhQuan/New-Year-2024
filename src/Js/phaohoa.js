@@ -1,6 +1,8 @@
 'use strict';
 console.clear();
 
+
+
 const IS_MOBILE = window.innerWidth <= 640;
 const IS_DESKTOP = window.innerWidth > 800;
 const IS_HEADER = IS_DESKTOP && window.innerHeight < 300;
@@ -112,7 +114,7 @@ const store = {
 	state: {
 		// will be unpaused in init()
 		paused: true,
-		soundEnabled: false,
+		soundEnabled: true,
 		menuOpen: false,
 		openHelpTopic: null,
 		fullscreen: isFullscreen(),
@@ -126,10 +128,10 @@ const store = {
 				: IS_HEADER 
 					? '1.2' // Profile header default (doesn't need to be an int)
 					: '2', // Mobile default
-			autoLaunch: true,
+			autoLaunch: true, 
 			finale: false,
 			skyLighting: SKY_LIGHT_NORMAL + '',
-			hideControls: IS_HEADER,
+			hideControls: true, // đặt là IS_HEADER để lấy theo nhập dữ liệu từ web
 			longExposure: false,
 			scaleFactor: getDefaultScaleFactor()
 		}
@@ -2302,3 +2304,5 @@ if (IS_HEADER) {
 		);
 	}, 3000);
 }
+
+
