@@ -2288,7 +2288,7 @@ if (IS_HEADER) {
 	init();
 } else {
 	// Allow status to render, then preload assets and start app.
-	setLoadingStatus('Lighting Fuses');
+	setLoadingStatus('🤖 NguyenAnhQuan 🤖');
 	setTimeout(() => {
 		soundManager.preload()
 		.then(
@@ -2300,5 +2300,5 @@ if (IS_HEADER) {
 				return Promise.reject(reason);
 			}
 		);
-	}, 0);
+	}, 3000);
 }

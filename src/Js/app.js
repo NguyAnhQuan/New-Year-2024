@@ -1,4 +1,4 @@
-var fut = new Date("feb 10, 2024 00:00:02").getTime()
+var fut = new Date("jan 10, 2024 00:00:02").getTime()
 let x = setInterval(function stime(){
     var now = new Date().getTime()
     var D = fut - now
@@ -16,6 +16,6 @@ let x = setInterval(function stime(){
 
     if(D<0){
         clearInterval(x);
-        window.location.href="intro.html"
+        window.location.href="./src/Html/video.html"
     }
 }, 0.1);

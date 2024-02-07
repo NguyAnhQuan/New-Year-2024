@@ -1,0 +1,29 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Ẩn thanh cuộn dọc và ngang */
+html,
+body {
+    overflow: hidden;
+}
+
+/* Ẩn tất cả các phần tử điều khiển video ngoại trừ nút phát */
+video::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+
+/* Chỉ hiển thị nút phát */
+video::-webkit-media-controls-play-button {
+    display: block !important;
+}
+
+
