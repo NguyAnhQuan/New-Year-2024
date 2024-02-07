@@ -52,3 +52,10 @@ buttonSong.onclick= function(){
         mySong.play()
     }
 }
+
+var albumDiv = document.querySelector('.album');
+
+albumDiv.addEventListener('click', function() {
+    // Chuyển hướng sang trang mới
+    window.location.href = '../Html/album.html';
+});

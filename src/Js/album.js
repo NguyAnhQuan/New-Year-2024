@@ -42,7 +42,7 @@ window.onload = function() {
         }
     }
 
-    setInterval(nextImage, 300); // Thay đổi 3000 để thay đổi tốc độ chuyển đổi ảnh (tính bằng mili giây)
+    setInterval(nextImage, 3000); // Thay đổi 3000 để thay đổi tốc độ chuyển đổi ảnh (tính bằng mili giây)
 
     // Chuyển trang khi người dùng click vào div chu
     chu.addEventListener('click', function() {
