@@ -2290,7 +2290,7 @@ if (IS_HEADER) {
 	init();
 } else {
 	// Allow status to render, then preload assets and start app.
-	setLoadingStatus('🤖 NguyenAnhQuan 🤖');
+	setLoadingStatus('🤖 Nguyen Anh Quan 🤖');
 	setTimeout(() => {
 		soundManager.preload()
 		.then(
