@@ -1,0 +1,28 @@
+#album {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* position: relative; */
+    border-radius: 5px;
+    display: flex;
+    justify-content: center; /* căn giữa theo chiều ngang */
+}
+
+#album img {
+    display: inline;
+    width: 98%;
+    height: 95%;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+    border-radius: 5px;
+    align-items: center;
+}
+
+#album img.active {
+    opacity: 1;
+}
+
+#album img:not(.active) {
+    opacity: 0;
+}
+ 

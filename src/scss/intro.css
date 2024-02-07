@@ -1772,6 +1772,101 @@ body{
 .slider3:hover .title h1{
     animation: title 2s forwards;
 }
+
+.slider3 .box-content .right .content .album{
+    /* position: absolute; */
+    z-index: 100000;
+    /* margin-top: 330px; */
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* transform: scale(0); */
+}
+.slider3 .box-content .right .content .album button{
+    /* padding: 10px 15px; */
+    background-color: rgb(199,37,68);
+    border: none;
+    font-size: 25px;
+    border-radius: 4px 0px 0px 4px;
+    transition: 0.5s;
+    width: 58px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+}
+.slider3 .box-content .right .content .album button >i{
+    transition: 0.5s;
+}
+.slider3 .box-content .right .content .album span{
+    position: relative;
+    width: 50px;
+    height: 40px;
+    background-color: rgb(199,37,68);
+    margin-left: -2px;
+    border-radius: 0px 6px 6px 0px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+} 
+
+.slider3 .box-content .right .content .album:hover button i{
+    cursor: pointer;
+    color: rgb(255, 41, 80);
+    filter: drop-shadow(0px 0px 10px rgb(255, 187, 199));
+    animation: rotatealbum 0.5s linear infinite;
+}
+@keyframes rotatealbum{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(5deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-5deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.slider3 .box-content .right .content .album:hover > .heart{
+    transform: translateY(-4px);
+    background-color: rgb(186, 35, 62);
+    box-shadow: -2px 2px 5px rgb(0, 0, 0, 0.5);
+}
+
+.slider3 .box-content .right .content .album:hover > .heart i{
+    color: rgb(255, 41, 80);
+    transform: rotate(360deg);
+    filter: drop-shadow(0px 0px 10px rgb(255, 187, 199));
+}
+.slider3 .box-content .right .content .album i{
+    display: none;
+}
+
+.slider3 .box-content .right .content .album{
+    margin-top: 15%;
+}
+
+.slider3 .box-content .right .content .album button {
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    font-size: 15px;
+    width: 250px;
+}
+
 @keyframes title{
     0%{
         margin-top: -40px;
@@ -2128,3 +2223,6 @@ body{
         top: -600px;
     }
  }
+
+
+ 
