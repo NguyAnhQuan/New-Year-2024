@@ -27,7 +27,7 @@ window.onload = function() {
         const currentImage = images[currentIndex];
         currentImage.classList.remove('active');
         currentIndex = (currentIndex + 1) % images.length;
-        if (currentIndex === 18 && !isChuShown) { // Kiểm tra khi đến ảnh 19.jpg và chưa hiển thị chữ
+        if (currentIndex === 19 && !isChuShown) { // Kiểm tra khi đến ảnh 19.jpg và chưa hiển thị chữ
             images.forEach(image => {
                 image.classList.remove('active');
             });
